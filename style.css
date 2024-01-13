@@ -1,0 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* background-image: url('bg.jpeg'); 
+    background-size: cover; */
+    overflow: hidden;
+    height: 100vh;
+}
+
+.taskbar{
+    background-color: #f3f3f3;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    z-index: 110;
+    justify-content: center;
+}
+
+.startmenu{
+    position: absolute; 
+    /* bottom: 50px; */
+    bottom: -655px;
+    width: 100%;
+    text-align: center;
+    transition: all 0.3s ease-in; 
+}
+
+.startmenu img{
+    border-radius: 8px;
+}
+
+.right{
+    justify-self: flex-end;
+    position: absolute;
+    right: 0;
+    margin: 6px 0;
+    height: 85%;
+}  
+.icons{
+    color: white;
+}
+/* Add styling for the date and time display in the taskbar */
+.date-time {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    color: #000; /* Text color (adjust as needed) */
+    font-family: 'Segoe UI', Tahoma, Arial, sans-serif; /* Windows-style font or web-safe fonts */
+    font-size: 14px; /* Adjust font size as needed */
+    z-index: 120; /* Set a higher z-index to ensure it's above other elements */
+}
